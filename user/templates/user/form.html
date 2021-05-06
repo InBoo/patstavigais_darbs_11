@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        {# https://docs.djangoproject.com/en/3.2/topics/forms/#form-rendering-options #}
+        {{ form.as_p }}
+        <input type="submit">
+    </form>
+</body>
+</html>
